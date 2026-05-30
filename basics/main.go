@@ -9,6 +9,8 @@ func main() {
 	// With var or :=
 	normalArray := [2]int{1, 2}
 	array(normalArray)
+
+	slice()
 }
 
 func array(normalArray [2]int) {
@@ -34,4 +36,15 @@ func array(normalArray [2]int) {
 		}
 		fmt.Println("------------------")
 	}
+}
+
+func slice() {
+	fmt.Println("\n-------- Slice -------")
+
+	array := [5]int{1, 2, 3, 4, 5}
+	sl := array[:3]
+	fmt.Println(sl, len(sl), cap(sl))
+
+	sl = sl[:2]
+	fmt.Println(sl, len(sl), cap(sl))
 }
