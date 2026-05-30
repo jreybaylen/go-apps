@@ -5,15 +5,14 @@ import "fmt"
 func main() {
 	fmt.Println("Hello Go")
 
-	array()
-}
-
-func array() {
 	// Data Assignment
 	// With var or :=
-
-	fmt.Println("\n-------- Array -------")
 	normalArray := [2]int{1, 2}
+	array(normalArray)
+}
+
+func array(normalArray [2]int) {
+	fmt.Println("\n-------- Array -------")
 	for idx, value := range normalArray {
 		fmt.Printf("Index: %v, Value: %v \n", idx, value)
 	}
