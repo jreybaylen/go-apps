@@ -2,8 +2,21 @@ package main
 
 import "fmt"
 
+type Person struct {
+	Name string
+	Age  int
+}
+
+func (p Person) Greet() {
+	fmt.Printf("Hello, my name is %s and I am %d years old.\n", p.Name, p.Age)
+}
+
 func main() {
-	fmt.Println("Hello Go")
+	person := Person{
+		Name: "Jrey",
+		Age:  31,
+	}
+	person.Greet()
 
 	// Data Assignment
 	// With var or :=
