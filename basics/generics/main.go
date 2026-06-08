@@ -1,4 +1,4 @@
-package main
+package generics
 
 import "fmt"
 
@@ -20,7 +20,7 @@ func values[K comparable, V int](data map[K]V) []V {
 	return values
 }
 
-func generics_main() {
+func GenericsMain() {
 	fmt.Println("Sum:", sum(1.1, 1.2))
 	fmt.Println("Values:", values(map[string]int{"a": 1, "b": 2, "c": 3}))
 }

@@ -1,6 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/jreybaylen/go-apps/basics/generics"
+	go_routine "github.com/jreybaylen/go-apps/basics/go-routine"
+	"github.com/jreybaylen/go-apps/basics/http"
+	"github.com/jreybaylen/go-apps/basics/pointer"
+	"github.com/jreybaylen/go-apps/basics/structs"
+)
 
 type Person struct {
 	Name string
@@ -24,6 +32,11 @@ func main() {
 	array(normalArray)
 
 	slice()
+	generics.GenericsMain()
+	structs.StructsMain()
+	pointer.PointerMain()
+	go_routine.GoRoutineMain()
+	http.HttpMain()
 }
 
 func array(normalArray [2]int) {

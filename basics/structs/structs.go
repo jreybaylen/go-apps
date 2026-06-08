@@ -1,4 +1,4 @@
-package main
+package structs
 
 type Shape interface {
 	getName() string
@@ -29,7 +29,7 @@ func (t Triangle) getSides() (float64, float64, float64) {
 	return t.a, t.b, t.c
 }
 
-func structs_main() {
+func StructsMain() {
 	var shapes []Shape = []Shape{
 		Triangle{name: "Triangle", a: 3, b: 4, c: 5},
 	}

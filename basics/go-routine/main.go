@@ -1,4 +1,4 @@
-package main
+package go_routine
 
 import (
 	"fmt"
@@ -11,7 +11,7 @@ func add(wg *sync.WaitGroup, a int, b int) {
 	fmt.Printf("The sum of %d and %d is %d\n", a, b, result)
 }
 
-func go_routine_main() {
+func GoRoutineMain() {
 	// Go Routine
 	// A go routine is a lightweight thread of execution managed by the Go runtime.
 	// It allows you to run functions concurrently, enabling efficient use of resources and improved performance.

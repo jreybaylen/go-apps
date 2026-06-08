@@ -1,10 +1,10 @@
-package main
+package http
 
 import (
 	"net/http"
 )
 
-func http_main() {
+func HttpMain() {
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Hello, World!"))
 	})

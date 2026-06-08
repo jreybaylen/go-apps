@@ -1,4 +1,4 @@
-package main
+package pointer
 
 type Book struct {
 	title  string
@@ -13,7 +13,7 @@ func (b *Book) setAuthor(author string) {
 	b.author = author
 }
 
-func pointer_main() {
+func PointerMain() {
 	x := 10
 	y := &x
 
