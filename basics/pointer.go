@@ -1,4 +1,4 @@
-package basics
+package main
 
 type Book struct {
 	title  string
