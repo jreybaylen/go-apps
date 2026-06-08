@@ -1,4 +1,4 @@
-package main
+package basics
 
 type Shape interface {
 	getName() string
